@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- importing jquery library -->
+<title>The jQuery Example</title>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+<!-- User defined JavaScript -->
+<script type="text/javascript">
+$(document).ready(function() {
+    //$("p:last()").css("background-color","yellow");only last p tag
+    //$("p:gt(0)").css("background-color","yellow");last 2
+    //$("p:lt(2)").css("background-color","yellow");first
+    $("p:even").css("background-color","yellow");//even
+});
+</script>
+</head>
+<body>
+    <div>
+        <p class="myclass">This is a paragraph</p>
+        <p id="myid">This is second paragraph</p>
+        <p>This is third paragraph</p>
+    </div>
+</body>
+</html>

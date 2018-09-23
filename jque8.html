@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The jQuery Example</title>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("div").click(function(){
+    $(this).replaceWith("<h1>JQuery is great</h1>");
+    });
+});
+</script>
+</head>
+<body>
+    <div id="division" style="color:blue;">
+        This is Blue text!!
+    </div>
+    <div>
+            This is Black text!!
+    </div> 
+</body>
+</html>

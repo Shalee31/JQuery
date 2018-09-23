@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The jQuery Example</title>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+<style type="text/css">
+    div{margin:10px;padding:12px;border:2px solid;width:60px;}
+    div.yellow{background-color:yellow; }
+</style>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("div").click(function(){
+        //$(this).remove();remove boxes
+        $(this).before('<div class="yellow"></div>');//add boxes
+    });
+});
+</script>
+</head>
+<body>
+    <div style="background:blue;"></div>
+    <div style="background:green;"></div>
+    <div style="background:red;"></div>    
+</body>
+</html>

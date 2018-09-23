@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The jQuery Example</title>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    $(".clickme").click(function(){
+        $("#lips").toggle(3000); 
+    });
+});
+</script>
+
+<style type="text/css">
+    .clickme{margin:10px;padding:12px;border:2px solid #666;
+        width:100px;height:20px;background-color:cyan;}
+</style>
+
+</head>
+<body>
+    <div class="clickme">
+        Click Me
+    </div>
+    <img id="lips" src="1.jpg" height=200 width=300>
+</body>
+</html>
